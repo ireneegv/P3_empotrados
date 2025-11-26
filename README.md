@@ -106,4 +106,8 @@ Para este sensor se ha usado la libreria de Ada
   El LED2, que debía permitir el ajuste progresivo de la intensidad luminosa mediante PWM, únicamente se encendía y se apagaba sin mostrar variación en el brillo.
   El problema se debía a que estaba conectado a un pin que **no soportaba PWM**, por lo que no era posible modificar su intensidad.
   Al reconectar el LED a un pin compatible con PWM, el control de brillo comenzó a funcionar correctamente.
+  
+* **Tiempo en interrupciones:**
+
+  
 
