@@ -86,8 +86,7 @@ Para este sensor se ha usado la libreria de Ada
 archivo frizz.
 <img width="2529" height="1875" alt="p3_bb" src="https://github.com/user-attachments/assets/e3be66b1-674d-4573-a0f2-06638d1472ed" />
 
-
-
+[archivo](p3.fzz)
 
 ---
 #  video explicativo
