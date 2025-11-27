@@ -81,7 +81,7 @@ Se han reservado los **pines de interrupción (2 y 3)** para los botones.
 ---
 # Imagen de las conexiones
 
-<img width="2529" height="1875" alt="p3_bb" src="https://github.com/user-attachments/assets/e3be66b1-674d-4573-a0f2-06638d1472ed" />
+<img width="2529" height="1859" alt="p3_bb" src="https://github.com/user-attachments/assets/8fbe1a19-af0a-4e74-bd32-50e2cccb9cb9" />
 
 [archivo de las conexiones](p3.fzz)
 
