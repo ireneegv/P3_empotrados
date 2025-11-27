@@ -86,9 +86,18 @@ Se han reservado los **pines de interrupción (2 y 3)** para los botones.
 [archivo de las conexiones](p3.fzz)
 
 ---
-#  video explicativo
+#  video
 ---
 [![WhatsApp Image 2025-11-27 at 12 49 03](https://github.com/user-attachments/assets/0eafb455-ae20-4ebf-888a-503e34d60107)](https://youtu.be/NGJ5uwuH57I)
+
+---
+#  código
+---
+Para la práctica 3 se emplea un switch dentro del loop principal para gestionar los distintos estados del programa. Cada estado ejecuta una funcionalidad concreta, lo que permite organizar mejor el flujo y evitar estructuras complejas.
+
+En el botón principal cada vez que cambia su estado se llamará a la función. Cuando el botón se pulsa, se activa un contador y se reinicia la variable que mide el tiempo de pulsación. Cuando se libera, el contador se detiene y se marca que el botón fue liberado. Para medir con precisión cuánto tiempo se mantiene pulsado, se utiliza Timer1, configurado para generar una interrupción cada 1 ms. Cada vez que Timer1 interrumpe y el contador está activo, se incrementa el tiempo de pulsación. Esto permite activar distintas acciones según la duración de la pulsación, sin bloquear el resto del programa.
+
+En el caso del joystick, su botón genera frecuentemente falsos positivos debido al rebote mecánico. Para solucionarlo, también se utiliza una interrupción de tipo FALLING, que simplemente marca que se ha pulsado el botón. Luego, en el loop principal, se comprueba esta marca y se aplica un umbral de 200 ms para filtrar pulsaciones consecutivas muy rápidas. De este modo, solo se considera una pulsación válida si ha pasado suficiente tiempo desde la anterior.
 
 ---
 #  Dificultades y datos tenidos en cuenta
