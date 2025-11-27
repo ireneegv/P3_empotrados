@@ -88,7 +88,7 @@ Se han reservado los **pines de interrupción (2 y 3)** para los botones.
 ---
 #  video
 ---
-[![WhatsApp Image 2025-11-27 at 12 49 03](https://github.com/user-attachments/assets/0eafb455-ae20-4ebf-888a-503e34d60107)](https://youtu.be/NGJ5uwuH57I)
+[![WhatsApp Image 2025-11-27 at 12 49 03](https://github.com/user-attachments/assets/0eafb455-ae20-4ebf-888a-503e34d60107)](https://youtu.be/TPqKqbSE7LY)
 
 ---
 #  código
