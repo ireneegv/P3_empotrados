@@ -36,7 +36,6 @@ Se han reservado los **pines de interrupción (2 y 3)** para los botones.
 ---
 
 ##  Sensor de Temperatura y Humedad – DHT11
-Para este sensor se ha usado la libreria de Ada 
 
 | DHT11 | Arduino UNO |
 | ----- | ----------- |
