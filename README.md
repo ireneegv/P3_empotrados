@@ -95,9 +95,17 @@ Se han reservado los **pines de interrupción (2 y 3)** para los botones.
 ---
 Para la práctica 3 se emplea un switch dentro del loop principal para gestionar los distintos estados del programa. Cada estado ejecuta una funcionalidad concreta, lo que permite organizar mejor el flujo y evitar estructuras complejas.
 
+* **Interrupciones:**
 En el botón principal cada vez que cambia su estado se llamará a la función. Cuando el botón se pulsa, se activa un contador y se reinicia la variable que mide el tiempo de pulsación. Cuando se libera, el contador se detiene y se marca que el botón fue liberado. Para medir con precisión cuánto tiempo se mantiene pulsado, se utiliza Timer1, configurado para generar una interrupción cada 1 ms. Cada vez que Timer1 interrumpe y el contador está activo, se incrementa el tiempo de pulsación. Esto permite activar distintas acciones según la duración de la pulsación, sin bloquear el resto del programa.
 
 En el caso del joystick, su botón genera frecuentemente falsos positivos debido al rebote mecánico. Para solucionarlo, también se utiliza una interrupción de tipo FALLING, que simplemente marca que se ha pulsado el botón. Luego, en el loop principal, se comprueba esta marca y se aplica un umbral de 200 ms para filtrar pulsaciones consecutivas muy rápidas. De este modo, solo se considera una pulsación válida si ha pasado suficiente tiempo desde la anterior.
+
+* **watchdog:**
+  
+  Se implementó un watchdog dentro del bucle while para garantizar que, si el programa se queda bloqueado, el sistema se reinicie automáticamente, asegurando mayor estabilidad.
+
+ * **Threads:**
+ * En este caso no se usan threads, en su lugar se usan condiciones para no bloquear, permitiendonos enseñar los distintos menús de la práctica.
 
 ---
 #  Dificultades y datos tenidos en cuenta
@@ -123,9 +131,6 @@ En el caso del joystick, su botón genera frecuentemente falsos positivos debido
   
   Como la función delay() bloquea la ejecución del programa, se reemplazó por condiciones basadas en el tiempo transcurrido, permitiendo que el código siga ejecutándose sin interrupciones innecesarias.
 
-* **watchdog:**
-  
-  Se implementó un watchdog dentro del bucle while para garantizar que, si el programa se queda bloqueado, el sistema se reinicie automáticamente, asegurando mayor estabilidad.
   
 ---
 #  Páginas usadas y librerías usadas
