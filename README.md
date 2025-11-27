@@ -1,7 +1,7 @@
 ---
 
 # Conexiones de Componentes
-A continuación se describen todas las conexiones realizadas para los distintos sensores, actuadores.
+A continuación se describen todas las conexiones realizadas para los distintos sensores y actuadores.
 Se han reservado los **pines de interrupción (2 y 3)** para los botones (joystick y botón externo).
 
 ---
